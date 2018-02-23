@@ -6,12 +6,18 @@ sans-serif;
 body {
     font-family: $r;
     color: #000;
+    background: #ECEFF1;
 }
 
 .container,
 [class*='col-'] {
     padding-left: rem(15px);
     padding-right: rem(15px);
+}
+
+.row {
+    margin-right: rem(-15px);
+    margin-left: rem(-15px);
 }
 
 
@@ -136,7 +142,7 @@ body {
     }
 }
 
-.blog-button {
+a.blog-button {
     font: 700 rem(13px) $l;
     background: #292929;
     color: #fff;
@@ -185,7 +191,7 @@ body {
     padding: rem(6px) 0;
     p {
         margin: 0;
-        a{
+        a {
             color: #000;
         }
         i {
@@ -196,4 +202,90 @@ body {
         }
     }
 }
+
 /*============================= Notice =========================*/
+
+.section-head {
+    font-size: rem(40px);
+    padding-bottom: rem(20px);
+}
+
+.notice {
+    background: #ECEFF1;
+    padding-top: rem(50px);
+    padding-bottom: rem(44px);
+    .content {
+        box-shadow: 0 rem(3px) rem(6px) #000;
+        margin-bottom: rem(40px);
+        .img {
+            position: relative;
+            overflow: hidden;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                box-shadow: 0 0 rem(90px) rem(50px) #000000;
+            }
+            img {
+                width: 100%;
+            }
+            .date {
+                position: absolute;
+                top: rem(10px);
+                left: rem(15px);
+                z-index: 1;
+                font: rem(14px) $l;
+                color: #fff;
+            }
+        }
+        .social {
+            background: #fff;
+            a.twitter,
+            a.facebook {
+                background: #00ACED;
+                color: #fff;
+                border-radius: 0;
+                margin: 0;
+                font: 900 rem(12px) $l;
+                padding: rem(5px) rem(5px);
+                min-width: rem(67px);
+                position: relative;
+                top: rem(-12px);
+                i {
+                    font-size: rem(16px);
+                    margin-right: rem(4px);
+                }
+            }
+            a.facebook {
+                left: rem(-4px);
+                background: #3B5998;
+            }
+        }
+        .text {
+            background: #fff;
+            padding: rem(0) rem(15px) rem(10px) rem(15px);
+            a.title {
+                font-size: rem(16px);
+                font-weight: 700;
+                max-width: rem(226px);
+                color: #000;
+            }
+            p {
+                font-size: rem(15px);
+                color: #292929;
+                margin: rem(10px) 0;
+            }
+        }
+    }
+}
+a.view-more{
+    font-size: rem(22px);
+    font-weight: 700;
+    color: #292929;
+    text-decoration: none;
+    span{
+        color: #E30606;
+    }
+}
