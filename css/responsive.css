@@ -1,6 +1,11 @@
 html {
   font-size: 100%;
 }
+@media (max-width: 991px) {
+  html .banner-alart {
+    font-size: 1.1875rem;
+  }
+}
 @media (max-width: 767px) {
   html {
     font-size: 75%;

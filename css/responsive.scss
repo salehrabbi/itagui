@@ -2,10 +2,18 @@
 
 html {
     @include rem-baseline;
+    @media (max-width: 991px) {
+        .banner-alart {
+            font-size: rem(19px);
+        }
+    }
+
 
     @media (max-width: 767px) {
         @include rem-baseline(75%);
     }
+
+
     @media (max-width: 575px) {
         @include rem-baseline(90%);
         .slider .content h2 {
@@ -16,6 +24,9 @@ html {
             min-height: rem(500px);
         }
     }
+
+
+
     @media (max-width: 480px) {
         .carousel-control {
             display: none;

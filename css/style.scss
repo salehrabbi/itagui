@@ -5,6 +5,7 @@ $r: 'Roboto',
 sans-serif;
 body {
     font-family: $r;
+    color: #000;
 }
 
 .container,
@@ -20,16 +21,19 @@ body {
         width: 550px;
     }
 }
+
 @media (min-width:768px) {
     .container {
         width: 750px;
     }
 }
+
 @media (min-width:992px) {
     .container {
         width: rem(970px);
     }
 }
+
 @media (min-width:1200px) {
     .container {
         width: rem(1170px);
@@ -171,3 +175,25 @@ body {
         bottom: rem(-1px);
     }
 }
+
+/*============================= banner-alart =========================*/
+
+.banner-alart {
+    font-size: rem(22px);
+    font-weight: 500;
+    background: #FFD600;
+    padding: rem(6px) 0;
+    p {
+        margin: 0;
+        a{
+            color: #000;
+        }
+        i {
+            font-size: rem(33px);
+            line-height: 1;
+            position: relative;
+            top: rem(4px);
+        }
+    }
+}
+/*============================= Notice =========================*/
