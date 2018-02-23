@@ -289,3 +289,28 @@ a.view-more{
         color: #E30606;
     }
 }
+/*============================= video-gallery =========================*/
+.video-gallery{
+    margin-top: rem(310px);
+    background: #182A47;
+    padding-bottom: rem(73px);
+    iframe{
+        width: 100%;
+    }
+    iframe.big{
+        min-height: rem(470px);
+    }
+    iframe.small{
+        min-height: rem(148px);
+        margin-bottom: rem(5px);
+    }
+    .social-site{
+        margin-top: rem(52px);
+    }
+    .section-up{
+        margin-top: rem(-290px);
+    }
+    .section-head{
+        margin-bottom: rem(20px);
+    }
+}

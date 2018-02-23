@@ -281,3 +281,29 @@ a.view-more {
 a.view-more span {
   color: #E30606;
 }
+
+/*============================= video-gallery =========================*/
+.video-gallery {
+  margin-top: 19.375rem;
+  background: #182A47;
+  padding-bottom: 4.5625rem;
+}
+.video-gallery iframe {
+  width: 100%;
+}
+.video-gallery iframe.big {
+  min-height: 29.375rem;
+}
+.video-gallery iframe.small {
+  min-height: 9.25rem;
+  margin-bottom: 0.3125rem;
+}
+.video-gallery .social-site {
+  margin-top: 3.25rem;
+}
+.video-gallery .section-up {
+  margin-top: -18.125rem;
+}
+.video-gallery .section-head {
+  margin-bottom: 1.25rem;
+}
