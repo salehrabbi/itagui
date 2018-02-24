@@ -10,7 +10,7 @@ html {
 
 
     @media (max-width: 767px) {
-        @include rem-baseline(75%);
+        @include rem-baseline(90%);
         .video-gallery iframe.small {
             min-height: rem(298px);
         }
