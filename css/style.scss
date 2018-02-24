@@ -333,10 +333,12 @@ a.view-more {
     background: url(../images/fondo-panoramica.jpg) no-repeat center;
     background-size: cover;
     padding-top: rem(119px);
-    .view-more{
+    .view-more {
         margin-top: rem(15px);
     }
 }
+
+/*============================= announce =========================*/
 
 .announce-title {
     margin-bottom: 36px;
@@ -411,6 +413,8 @@ a.view-more {
     }
 }
 
+/*============================= calander =========================*/
+
 .calander-sidebar {
     .calander-title {
         background: #27AE60;
@@ -468,10 +472,12 @@ a.view-more {
 .sider-bar {
     > div {
         margin-bottom: rem(55px);
-        border-radius:  0 0 rem(8px) rem(8px);
+        border-radius: 0 0 rem(8px) rem(8px);
         overflow: hidden;
     }
 }
+
+/*============================= poll =========================*/
 
 .poll-sidebar {
     .poll-title {
@@ -513,26 +519,27 @@ a.view-more {
         }
     }
 }
-.poll-form{
+
+.poll-form {
     background: #fff;
-    box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,.16);
-    border-radius:  0 0 rem(8px) rem(8px);
+    box-shadow: 0 rem(3px) rem(6px) rgba(0, 0, 0, .16);
+    border-radius: 0 0 rem(8px) rem(8px);
     overflow: hidden;
-    .form-padding{
+    .form-padding {
         padding: rem(25px);
     }
-    h3{
+    h3 {
         margin: 0;
         font: 900 rem(16px) $l;
         text-align: center;
         max-width: rem(466px);
         margin-bottom: rem(10px);
     }
-    .submit{
+    .submit {
         display: flex;
         background: #fff;
         padding-bottom: 20px;
-        p{
+        p {
             float: left;
             width: calc(100% - 10.25rem);
             background: #000000;
@@ -544,8 +551,8 @@ a.view-more {
             align-items: center;
             padding: 0 rem(22px);
         }
-        input{
-//            min-height: rem(48px);
+        input {
+            //            min-height: rem(48px);
             width: rem(164px);
             background: #FF7700;
             border: none;
@@ -553,6 +560,48 @@ a.view-more {
             font-weight: 700;
             font-size: rem(16px);
             color: #fff;
+        }
+    }
+}
+
+/*============================= subscribe =========================*/
+
+.subscribe {
+    background: rgba(25, 118, 210, 9);
+    padding: rem(20px) 0;
+    h2 {
+        margin: 0;
+        font-size: rem(22px);
+        font-weight: 700;
+        color: #fff;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    input[type="text"] {
+        font: italic rem(22px) $l;
+        color: #fff;
+        height: rem(48px);
+        width: 100%;
+        background: none;
+        border: rem(1px) solid #fff;
+        padding: 0 rem(15px);
+    }
+    input[type="submit"] {
+        width: 100%;
+        background: #F1F1F1;
+        font: 16px $l;
+        color: #2D81D4;
+        border: none;
+        height: rem(48px);
+        border: rem(1px) solid transparent;
+        transition: .3s;
+        &:hover {
+            color: #fff;
+            background: none;
+            border-color: #fff;
         }
     }
 }

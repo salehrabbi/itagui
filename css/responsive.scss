@@ -26,6 +26,10 @@ html {
         .video-gallery iframe.small {
             min-height: rem(298px);
         }
+        .subscribe h2 {
+            text-align: center;
+            margin-bottom: rem(15px);
+        }
     }
 
 
@@ -37,6 +41,9 @@ html {
         .slider .content {
             padding: 0 rem(25px);
             min-height: rem(500px);
+        }
+        .subscribe input[type="text"] {
+            margin-bottom: rem(15px);
         }
     }
 
