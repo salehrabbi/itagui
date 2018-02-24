@@ -406,3 +406,57 @@ a.view-more {
         }
     }
 }
+
+.calander-sidebar {
+    .calander-title {
+        background: #27AE60;
+    }
+}
+
+.calander-sidebar-content-wraper {
+    background: #fff;
+    padding: rem(15px);
+    box-shadow: 0 rem(2px) rem(4px) rgba(0,0,0,.30);
+    .content{
+        margin-bottom: rem(25px);
+    }
+    h4 {
+        margin: 0;
+        color: #27AE60;
+        font-weight: 700;
+        font-size: rem(22px);
+        margin-bottom: rem(10px);
+    }
+    .date {
+        display: inline-block;
+        position: relative;
+        float: left;
+        margin-right: rem(18px);
+        i {
+            font-size: rem(68px);
+            color: #66CC92;
+        }
+        span {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            font: 900 rem(22px) $l;
+            text-align: center;
+            margin-top: rem(-6.5px);
+            color: #292929;
+        }
+    }
+    a.title-link {
+        font-size: rem(16px);
+        font-weight: 700;
+        color: #292929;
+        vertical-align: top;
+        margin-top: rem(16px);
+        display: inline-block;
+        float: left;
+        width: 80%;
+    }
+
+}
