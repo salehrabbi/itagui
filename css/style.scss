@@ -286,6 +286,7 @@ a.view-more {
     font-weight: 700;
     color: #292929;
     text-decoration: none;
+    display: inline-block;
     span {
         color: #E30606;
     }
@@ -332,6 +333,9 @@ a.view-more {
     background: url(../images/fondo-panoramica.jpg) no-repeat center;
     background-size: cover;
     padding-top: rem(119px);
+    .view-more{
+        margin-top: rem(15px);
+    }
 }
 
 .announce-title {
@@ -416,8 +420,8 @@ a.view-more {
 .calander-sidebar-content-wraper {
     background: #fff;
     padding: rem(15px);
-    box-shadow: 0 rem(2px) rem(4px) rgba(0,0,0,.30);
-    .content{
+    box-shadow: 0 rem(2px) rem(4px) rgba(0, 0, 0, .30);
+    .content {
         margin-bottom: rem(25px);
     }
     h4 {
@@ -459,4 +463,94 @@ a.view-more {
         width: 80%;
     }
 
+}
+
+.sider-bar {
+    > div {
+        margin-bottom: rem(55px);
+        border-radius:  0 0 rem(8px) rem(8px);
+        overflow: hidden;
+    }
+}
+
+.poll-sidebar {
+    .poll-title {
+        background: #FF7700;
+    }
+    .ratio-check {
+        input {
+            display: none;
+        }
+        label {
+            text-transform: uppercase;
+            font-size: rem(16px);
+            font-weight: 700;
+            font-family: $l;
+            text-transform: uppercase;
+        }
+        span {
+            height: rem(24px);
+            width: rem(24px);
+            border: rem(3px) solid #E30606;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            margin-right: rem(8px);
+            bottom: rem(-5px);
+        }
+        input[type="radio"]:checked + label span::after {
+            content: "";
+            width: rem(12px);
+            height: rem(12px);
+            background: #E30606;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            margin-top: rem(-6px);
+        }
+    }
+}
+.poll-form{
+    background: #fff;
+    box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,.16);
+    .form-padding{
+        padding: rem(25px);
+    }
+    h3{
+        margin: 0;
+        font: 900 rem(16px) $l;
+        text-align: center;
+        max-width: rem(466px);
+        margin-bottom: rem(10px);
+    }
+    .submit{
+        display: flex;
+        background: #fff;
+        padding-bottom: 20px;
+        p{
+            float: left;
+            width: calc(100% - 10.25rem);
+            background: #000000;
+            min-height: rem(48px);
+            color: #fff;
+            margin: 0;
+            font: rem(14px) $l;
+            display: flex;
+            align-items: center;
+            padding: 0 rem(22px);
+        }
+        input{
+//            min-height: rem(48px);
+            width: rem(164px);
+            background: #FF7700;
+            border: none;
+            float: left;
+            font-weight: 700;
+            font-size: rem(16px);
+            color: #fff;
+        }
+    }
 }
