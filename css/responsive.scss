@@ -1,10 +1,22 @@
 @import "_rem.scss";
 
 html {
+
+
     @include rem-baseline;
+    @media (max-width: 1199px) {
+        .announce-content-wraper .content .date {
+            font-size: rem(13px);
+        }
+    }
+
+
     @media (max-width: 991px) {
         .banner-alart {
             font-size: rem(19px);
+        }
+        .announce-content-wraper .content .date {
+            font-size: rem(14px);
         }
     }
 
@@ -33,6 +45,20 @@ html {
     @media (max-width: 480px) {
         .carousel-control {
             display: none;
+        }
+        .announce-content-wraper .content .date,
+        .announce-content-wraper .content .img img,
+        .announce-content-wraper .content .img p {
+            width: 100%;
+        }
+        .announce-content-wraper .content .img {
+            flex-flow: row wrap;
+        }
+        .calander-sidebar-content-wraper a.title-link {
+            width: 73%;
+        }
+        .poll-form .submit p {
+            padding: 0 0.375rem;
         }
     }
 
