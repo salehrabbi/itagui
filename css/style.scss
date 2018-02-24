@@ -516,6 +516,8 @@ a.view-more {
 .poll-form{
     background: #fff;
     box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,.16);
+    border-radius:  0 0 rem(8px) rem(8px);
+    overflow: hidden;
     .form-padding{
         padding: rem(25px);
     }
