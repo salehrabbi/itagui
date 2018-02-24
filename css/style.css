@@ -599,3 +599,77 @@ a.view-more span {
   background: none;
   border-color: #fff;
 }
+
+/*============================= main-footer =========================*/
+.main-footer {
+  background: #1F292E;
+}
+.main-footer .flex-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.main-footer .widget {
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 1.5625rem 0;
+  border-bottom: 0.5rem solid #FFC107;
+  height: 100%;
+}
+.main-footer .widget a {
+  font-weight: 700;
+  color: #fff;
+}
+.main-footer .widget-1 {
+  border-color: #FFC107;
+}
+.main-footer .widget-2 {
+  border-color: #009640;
+}
+.main-footer .widget-3 {
+  border-color: #E30606;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin: 1.5625rem 0;
+}
+
+.footer-social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  padding-bottom: 0.625rem;
+}
+.footer-social li {
+  display: inline-block;
+  margin: 0.3125rem 1.5rem;
+}
+.footer-social li a {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background: #fff;
+  color: #1F292E;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.875rem;
+}
+
+.copy {
+  background: #000000;
+  padding: 0.625rem 0;
+  min-height: 4.625rem;
+}
+.copy p {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font: 0.8125rem "Lato", sans-serif;
+  line-height: 1.5;
+}

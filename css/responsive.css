@@ -62,4 +62,7 @@ html {
   html .poll-form .submit p {
     padding: 0 0.375rem;
   }
+  html .footer-social li {
+    margin: 0.3125rem 0.875rem;
+  }
 }
