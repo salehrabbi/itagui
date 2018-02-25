@@ -292,7 +292,102 @@ a.view-more {
     }
 }
 
-/*============================= video-gallery =========================*/
+/*============================= main-footer =========================*/
+
+/*============================= service =========================*/
+
+.service {
+    background: url(../images/fondo-servicios.jpg) no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    padding-top: rem(35px);
+    padding-bottom: rem(150px);
+    .section-head {
+        color: #fff;
+        padding-bottom: 70px;
+    }
+    .owl-carousel .owl-item img {
+        width: auto;
+        margin: 0 auto;
+    }
+    .nav {
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: rem(5px) rem(30px);
+            a {
+                padding: 0;
+                color: #fff;
+                font: 500 rem(26px) $r;
+                &:hover,
+                &:focus {
+                    background: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+        li.active {
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    .tab-content {
+        padding-top: rem(100px);
+    }
+    .content {
+        text-align: center;
+        .item-top {
+            padding-bottom: rem(120px);
+        }
+        img {
+            max-width: 100%;
+
+        }
+        a {
+            color: #fff;
+            font: rem(21px) $r;
+            display: inline-block;
+            margin-top: rem(45px);
+        }
+    }
+    .owl-nav {
+        i {
+            font-size: rem(40px);
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            margin-top: rem(-20px);
+        }
+        .owl-prev {
+            i {
+                left: rem(-14px);
+            }
+        }
+        .owl-next {
+            i {
+                right: rem(-14px);
+            }
+        }
+    }
+    .owl-dots {
+        text-align: center;
+        margin-top: rem(60px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        .owl-dot {
+            width: rem(57px);
+            height: rem(6px);
+            background: rgba(255, 255, 255, .40);
+            display: inline-block;
+            margin: 0 rem(12px);
+        }
+        .owl-dot.active {
+            background: #fff;
+        }
+    }
+}
 
 .video-gallery {
     margin-top: rem(310px);
@@ -611,7 +706,7 @@ a.view-more {
 .patner {
     background: #fff;
     padding: rem(50px) 0;
-    .carousel-wraper{
+    .carousel-wraper {
         max-width: rem(1088px);
         margin: 0 auto;
     }
@@ -624,18 +719,18 @@ a.view-more {
             color: #000;
             font-size: rem(32px);
             line-height: rem(55px);
-            box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,.16);
+            box-shadow: 0 rem(3px) rem(6px) rgba(0, 0, 0, .16);
             top: 50%;
             position: absolute;
             margin-top: rem(-30px);
         }
-        .owl-prev{
-            i{
+        .owl-prev {
+            i {
                 left: rem(-24px);
             }
         }
-        .owl-next{
-            i{
+        .owl-next {
+            i {
                 right: rem(-24px);
             }
         }

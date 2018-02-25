@@ -8,6 +8,9 @@ html {
         .announce-content-wraper .content .date {
             font-size: rem(13px);
         }
+        .service .nav li {
+            margin: rem(5px) rem(20px);
+        }
     }
 
 
@@ -17,6 +20,12 @@ html {
         }
         .announce-content-wraper .content .date {
             font-size: rem(14px);
+        }
+        .service .nav li {
+            margin: rem(5px) rem(10px);
+        }
+        .service .nav li a {
+            font-size: rem(20px);
         }
     }
 
@@ -44,6 +53,9 @@ html {
         }
         .subscribe input[type="text"] {
             margin-bottom: rem(15px);
+        }
+        .service .owl-dots .owl-dot {
+            width: rem(37px);
         }
     }
 

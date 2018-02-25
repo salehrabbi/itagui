@@ -283,7 +283,91 @@ a.view-more span {
   color: #E30606;
 }
 
-/*============================= video-gallery =========================*/
+/*============================= main-footer =========================*/
+/*============================= service =========================*/
+.service {
+  background: url(../images/fondo-servicios.jpg) no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  padding-top: 2.1875rem;
+  padding-bottom: 9.375rem;
+}
+.service .section-head {
+  color: #fff;
+  padding-bottom: 70px;
+}
+.service .owl-carousel .owl-item img {
+  width: auto;
+  margin: 0 auto;
+}
+.service .nav {
+  text-align: center;
+}
+.service .nav li {
+  display: inline-block;
+  margin: 0.3125rem 1.875rem;
+}
+.service .nav li a {
+  padding: 0;
+  color: #fff;
+  font: 500 1.625rem "Roboto", sans-serif;
+}
+.service .nav li a:hover, .service .nav li a:focus {
+  background: none;
+  text-decoration: underline;
+}
+.service .nav li.active a {
+  text-decoration: underline;
+}
+.service .tab-content {
+  padding-top: 6.25rem;
+}
+.service .content {
+  text-align: center;
+}
+.service .content .item-top {
+  padding-bottom: 7.5rem;
+}
+.service .content img {
+  max-width: 100%;
+}
+.service .content a {
+  color: #fff;
+  font: 1.3125rem "Roboto", sans-serif;
+  display: inline-block;
+  margin-top: 2.8125rem;
+}
+.service .owl-nav i {
+  font-size: 2.5rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.25rem;
+}
+.service .owl-nav .owl-prev i {
+  left: -0.875rem;
+}
+.service .owl-nav .owl-next i {
+  right: -0.875rem;
+}
+.service .owl-dots {
+  text-align: center;
+  margin-top: 3.75rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.service .owl-dots .owl-dot {
+  width: 3.5625rem;
+  height: 0.375rem;
+  background: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+.service .owl-dots .owl-dot.active {
+  background: #fff;
+}
+
 .video-gallery {
   margin-top: 19.375rem;
   background: #182A47;
