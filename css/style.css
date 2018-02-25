@@ -35,6 +35,104 @@ body {
     width: 73.125rem;
   }
 }
+.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.header-top {
+  background: #292929;
+}
+
+.social-top {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  padding: 0.3125rem 0;
+}
+.social-top li {
+  display: inline-block;
+  margin-right: 3.75rem;
+}
+.social-top li:last-child {
+  margin-right: 0;
+}
+.social-top li a {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background: #fff;
+  color: #1F292E;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.875rem;
+}
+.social-top li a.img {
+  width: auto;
+  height: auto;
+  background: transparent;
+}
+.social-top li a.img img {
+  max-width: 100%;
+}
+
+.social-top-2 {
+  text-align: right;
+}
+
+.search-top {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: -67%;
+  z-index: 999;
+}
+.search-top input {
+  background: transparent;
+  float: left;
+  width: calc(73% - 2.125rem);
+  border: none;
+  height: 1.75rem;
+  border-bottom: 0.0625rem solid #fff;
+  margin: 1.21875rem 1.0625rem;
+  color: #fff;
+}
+.search-top button {
+  background: rgba(0, 0, 0, 0.5);
+  float: left;
+  width: 27%;
+  border: none;
+  height: 4.1875rem;
+}
+
+.font-resize {
+  background: #009640;
+  padding: 0.625rem;
+  position: absolute;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 4.375rem;
+  right: 0;
+  top: 3.125rem;
+}
+.font-resize .fa {
+  margin: 0 0.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.font-resize.active {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+  top: 2.3125rem;
+}
+
 .yamm {
   background-color: transparent;
   border: none;
@@ -42,6 +140,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.yamm .navbar-header {
+  position: relative;
+}
+.yamm .navbar-header .date {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.52);
+  text-align: center;
+  font: 1rem "Lato", sans-serif;
+  width: 100%;
+  top: -42%;
+  color: #fff;
+  padding: 0.6875rem 0;
 }
 .yamm .navbar-brand {
   width: 16.375rem;
@@ -60,6 +171,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.yamm .navbar-brand:hover {
+  background: #fff;
 }
 .yamm .navbar-brand img {
   display: inline-block;
@@ -90,8 +204,31 @@ body {
   font-weight: 700;
   color: #292929;
 }
-.yamm .yamm-fw a {
+.yamm .navbar-nav > li > a:hover, .yamm .navbar-nav > li > a:focus {
+  background: none !important;
+}
+.yamm .yamm-fw > a {
   border-bottom: 0.5rem solid #FFC107;
+  position: relative;
+}
+.yamm .yamm-fw > a:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-width: 1.875rem;
+  border-right-width: 1.875rem;
+  border-top: 1.875rem solid #FECA00;
+  position: absolute;
+  bottom: -2.3125rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9999;
+  display: none;
+}
+.yamm .yamm-fw:nth-child(1) a {
+  border-color: #FECA00;
 }
 .yamm .yamm-fw:nth-child(2) a {
   border-color: #27AE60;
@@ -102,12 +239,68 @@ body {
 .yamm .yamm-fw:nth-child(4) a {
   border-color: #009EE2;
 }
+.yamm .yamm-fw.open > a:after {
+  display: block;
+}
+.yamm .yamm-fw.open:nth-child(1) a:after {
+  border-top-color: #FECA00;
+}
+.yamm .yamm-fw.open:nth-child(2) a:after {
+  border-top-color: #27AE60;
+}
+.yamm .yamm-fw.open:nth-child(3) a:after {
+  border-top-color: #E53935;
+}
+.yamm .yamm-fw.open:nth-child(4) a:after {
+  border-top-color: #009EE2;
+}
 .yamm .menu-logo {
-  width: 98px;
+  width: 6.125rem;
 }
 .yamm .menu-logo a {
   padding: 0;
   border: none;
+}
+.yamm .dropdown-menu {
+  background: rgba(255, 255, 255, 0.9);
+  width: calc(100% - 16.375rem);
+}
+.yamm .mega-drop {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 1.875rem;
+}
+.yamm .mega-drop li a {
+  font: 700 1rem "Lato", sans-serif;
+  line-height: 2rem;
+  color: #292929;
+  display: inline-block;
+}
+.yamm .mega-drop li a span {
+  color: #E30606;
+}
+.yamm .mega-drop li.extra {
+  margin-top: 1.125rem;
+}
+.yamm .mega-drop li.extra img {
+  margin-right: 0.625rem;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: #292929;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: auto;
+  border-radius: 0;
+}
+
+.mobile-icon,
+.search-bottom {
+  display: none;
 }
 
 /*============================= Slider =========================*/
@@ -363,13 +556,13 @@ a.view-more span {
 .service {
   background: url(../images/fondo-servicios.jpg) no-repeat;
   background-size: cover;
-  min-height: 1000px;
+  min-height: 62.5rem;
   padding-top: 2.1875rem;
   padding-bottom: 9.375rem;
 }
 .service .section-head {
   color: #fff;
-  padding-bottom: 70px;
+  padding-bottom: 4.375rem;
 }
 .service .owl-carousel .owl-item img {
   width: auto;

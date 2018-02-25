@@ -8,6 +8,12 @@ html {
   html .service .nav li {
     margin: 0.3125rem 1.25rem;
   }
+  html .social-top-1 {
+    padding-left: 0.9375rem;
+  }
+  html .social-top li {
+    margin-right: 3.125rem;
+  }
 }
 @media (max-width: 991px) {
   html .banner-alart {
@@ -21,6 +27,166 @@ html {
   }
   html .service .nav li a {
     font-size: 1.25rem;
+  }
+  html .navbar-header {
+    float: none;
+  }
+  html .navbar-toggle {
+    display: block;
+  }
+  html .navbar-collapse {
+    border-top: 0.0625rem solid transparent;
+    -webkit-box-shadow: inset 0 0.0625rem 0 rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 0.0625rem 0 rgba(255, 255, 255, 0.1);
+  }
+  html .navbar-collapse.collapse {
+    display: none !important;
+  }
+  html .navbar-nav {
+    float: none !important;
+  }
+  html .navbar-nav > li {
+    float: none;
+  }
+  html .navbar-nav > li > a {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+  html .navbar-collapse.collapse.in {
+    /* NEW */
+    display: block !important;
+  }
+  html .yamm .navbar-header .date {
+    display: none;
+  }
+  html .search-top,
+  html .yamm .menu-logo {
+    display: none;
+  }
+  html .yamm {
+    display: block;
+  }
+  html .yamm .navbar-nav {
+    display: block;
+  }
+  html .yamm .yamm-fw > a {
+    border: none;
+  }
+  html .yamm .navbar-nav {
+    margin: 0;
+  }
+  html .yamm .yamm-fw > a {
+    background: #FECA00;
+    color: #fff;
+    padding: 1.5625rem 0.9375rem;
+    font-size: 1.125rem;
+    text-align: left;
+  }
+  html .yamm .yamm-fw > a:hover, html .yamm .yamm-fw > a:focus {
+    background: #FECA00 !important;
+    color: #fff;
+  }
+  html .yamm .yamm-fw:nth-child(2) a {
+    background: #27AE60;
+  }
+  html .yamm .yamm-fw:nth-child(2) a:hover, html .yamm .yamm-fw:nth-child(2) a:focus {
+    background: #27AE60 !important;
+  }
+  html .yamm .yamm-fw:nth-child(3) a {
+    background: #E53935;
+  }
+  html .yamm .yamm-fw:nth-child(3) a:hover, html .yamm .yamm-fw:nth-child(3) a:focus {
+    background: #E53935 !important;
+  }
+  html .yamm .yamm-fw:nth-child(4) a {
+    background: #009EE2;
+  }
+  html .yamm .yamm-fw:nth-child(4) a:hover, html .yamm .yamm-fw:nth-child(4) a:focus {
+    background: #009EE2 !important;
+  }
+  html .yamm .yamm-fw {
+    clear: both;
+  }
+  html .yamm .dropdown-menu {
+    background: #fff;
+    position: static;
+    width: 100%;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.175) !important;
+  }
+  html .yamm .yamm-fw > a::after {
+    position: absolute;
+    bottom: -1.875rem;
+  }
+  html .yamm .mega-drop {
+    padding: 0.625rem 0;
+  }
+  html .grid-demo {
+    padding: 1.25rem 1.875rem;
+  }
+  html .mobile-icon {
+    display: inline-block;
+    margin-right: 1.5625rem;
+  }
+  html .yamm .navbar-collapse {
+    padding-right: 0;
+  }
+  html .header-top {
+    display: none;
+  }
+  html .navbar-default .navbar-toggle,
+  html .navbar-default .navbar-toggle:focus,
+  html .navbar-default .navbar-toggle:hover {
+    border-color: transparent;
+    background: transparent;
+  }
+  html .navbar-toggle .icon-bar {
+    width: 1.875rem;
+    height: 0.3125rem;
+    border-radius: 0.5rem;
+  }
+  html .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 0.5625rem;
+  }
+  html .navbar-default .navbar-toggle .icon-bar:nth-child(1) {
+    background: #FECA00;
+  }
+  html .navbar-default .navbar-toggle .icon-bar:nth-child(2) {
+    background: #009640;
+  }
+  html .navbar-default .navbar-toggle .icon-bar:nth-child(3) {
+    background: #E30606;
+  }
+  html .yamm .navbar-brand {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  html .main-header {
+    background: #fff;
+  }
+  html .yamm .navbar-brand img {
+    width: 6.25rem;
+    padding-left: 0.9375rem;
+  }
+  html .navbar-toggle {
+    margin-top: 1.125rem;
+  }
+  html .search-bottom {
+    display: block;
+    position: static;
+    background: #292929;
+  }
+  html .search-bottom input {
+    float: right;
+    width: calc(100% - 6.0625);
+    margin-left: 0;
+  }
+  html .search-bottom button {
+    background: none;
+    width: 5rem;
   }
 }
 @media (max-width: 767px) {

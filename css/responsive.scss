@@ -11,6 +11,12 @@ html {
         .service .nav li {
             margin: rem(5px) rem(20px);
         }
+        .social-top-1 {
+            padding-left: rem(15px);
+        }
+        .social-top li {
+            margin-right: rem(50px);
+        }
     }
 
 
@@ -26,6 +32,172 @@ html {
         }
         .service .nav li a {
             font-size: rem(20px);
+        }
+        .navbar-header {
+            float: none;
+        }
+        .navbar-toggle {
+            display: block;
+        }
+        .navbar-collapse {
+            border-top: rem(1px) solid transparent;
+            box-shadow: inset 0 rem(1px) 0 rgba(255, 255, 255, 0.1);
+        }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .navbar-nav {
+            float: none!important;
+
+        }
+        .navbar-nav > li {
+            float: none;
+        }
+        .navbar-nav > li > a {
+            padding-top: rem(10px);
+            padding-bottom: rem(10px);
+        }
+
+        .navbar-collapse.collapse.in {
+            /* NEW */
+            display: block!important;
+        }
+        .yamm .navbar-header .date {
+            display: none;
+        }
+        .search-top,
+        .yamm .menu-logo {
+            display: none;
+        }
+        .yamm {
+            display: block;
+        }
+        .yamm .navbar-nav {
+            display: block;
+        }
+        .yamm .yamm-fw > a {
+            border: none;
+        }
+        .yamm .navbar-nav {
+            margin: 0;
+        }
+        .yamm .yamm-fw > a {
+            background: #FECA00;
+            color: #fff;
+            padding: rem(25px) rem(15px);
+            font-size: rem(18px);
+            text-align: left;
+            &:hover,
+            &:focus {
+                background: #FECA00 !important;
+                color: #fff;
+            }
+        }
+        .yamm .yamm-fw:nth-child(2) a {
+            background: #27AE60;
+            &:hover,
+            &:focus {
+                background: #27AE60 !important;
+            }
+        }
+        .yamm .yamm-fw:nth-child(3) a {
+            background: #E53935;
+            &:hover,
+            &:focus {
+                background: #E53935 !important;
+            }
+        }
+        .yamm .yamm-fw:nth-child(4) a {
+            background: #009EE2;
+            &:hover,
+            &:focus {
+                background: #009EE2 !important;
+            }
+        }
+        .yamm .yamm-fw {
+            clear: both;
+        }
+        .yamm .dropdown-menu {
+            background: #fff;
+            position: static;
+            width: 100%;
+            border: rem(1px) solid rgba(0, 0, 0, .175) !important;
+        }
+        .yamm .yamm-fw > a::after {
+            position: absolute;
+            bottom: rem(-30px);
+        }
+        .yamm .mega-drop {
+            padding: rem(10px) 0;
+        }
+        .grid-demo {
+            padding: rem(20px) rem(30px);
+        }
+        .mobile-icon {
+            display: inline-block;
+            margin-right: rem(25px);
+        }
+        .yamm .navbar-collapse {
+            padding-right: 0;
+        }
+        .header-top {
+            display: none;
+        }
+        .navbar-default .navbar-toggle,
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            border-color: transparent;
+            background: transparent;
+        }
+        .navbar-toggle .icon-bar {
+            width: rem(30px);
+            height: rem(5px);
+            border-radius: rem(8px);
+        }
+        .navbar-toggle .icon-bar + .icon-bar {
+            margin-top: rem(9px);
+        }
+        .navbar-default .navbar-toggle {
+            .icon-bar {
+                &:nth-child(1) {
+                    background: #FECA00;
+                }
+                &:nth-child(2) {
+                    background: #009640;
+                }
+                &:nth-child(3) {
+                    background: #E30606;
+                }
+            }
+        }
+        .yamm .navbar-brand {
+            background: transparent;
+            box-shadow: none;
+            justify-content: baseline;
+        }
+        .main-header {
+            background: #fff;
+        }
+        .yamm .navbar-brand img {
+            width: rem(100px);
+            padding-left: rem(15px);
+        }
+        .navbar-toggle {
+            margin-top: rem(18px);
+        }
+        .search-bottom {
+            display: block;
+            position: static;
+            background: #292929;
+            input {
+                float: right;
+                width: calc(100% - 6.0625);
+                margin-left: 0;
+            }
+            button {
+                background: none;
+                width: rem(80px);
+            }
         }
     }
 

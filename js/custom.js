@@ -110,3 +110,36 @@ $('.owl-carousel-2').owlCarousel({
         }
     }
 })
+
+
+
+
+
+$(document).ready(function () {
+    $("#font-resize-control").click(function () {
+        $(".font-resize").toggleClass("active");
+    });
+
+    $(".font-resize .fa-plus").click(function () {
+        var fontSize = parseInt($(this).css("font-size"));
+        fontSize = fontSize + 5 + "px";
+        $('html').css({
+            'font-size': fontSize
+        });
+    });
+    $(".font-resize .fa-minus").click(function () {
+        var fontSize = parseInt($(this).css("font-size"));
+        fontSize = fontSize - 5 + "px";
+        $('html').css({
+            'font-size': fontSize
+        });
+    });
+    $("#black-white").click(function () {
+        $("body").toggleClass("gray");
+        $(".goog-te-banner-frame").toggleClass("translate-posotion");
+    });
+});
+
+
+
+
