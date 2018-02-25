@@ -39,3 +39,44 @@
 
 
 })(jQuery);
+
+
+$(document).ready(function(){
+  $(".owl-carousel-1").owlCarousel();
+});
+
+
+
+$('.owl-carousel-2').owlCarousel({
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayHoverPause: true,
+    rewind: true,
+    navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>'],
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    
+    responsive:{
+        0:{
+            items:2,
+            nav:false,
+            loop: false
+        },
+        480:{
+            items:3,
+            nav:false,
+            loop: false
+        },
+        576:{
+            items:3,
+        },
+        768:{
+            items:4,
+        },
+        992:{
+            items:6,
+        }
+    }
+})
