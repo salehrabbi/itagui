@@ -122,14 +122,14 @@ $(document).ready(function () {
 
     $(".font-resize .fa-plus").click(function () {
         var fontSize = parseInt($(this).css("font-size"));
-        fontSize = fontSize + 5 + "px";
+        fontSize = fontSize + 2 + "px";
         $('html').css({
             'font-size': fontSize
         });
     });
     $(".font-resize .fa-minus").click(function () {
         var fontSize = parseInt($(this).css("font-size"));
-        fontSize = fontSize - 5 + "px";
+        fontSize = fontSize - 2 + "px";
         $('html').css({
             'font-size': fontSize
         });
