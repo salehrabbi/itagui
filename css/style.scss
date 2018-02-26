@@ -1164,6 +1164,55 @@ ul.sider-bar-icon {
 
     li {
         margin-bottom: rem(20px);
+        position: relative;
+        span {
+            position: absolute;
+            min-width: 100px;
+            color: #000;
+            background: #fff;
+            height: 30px;
+            line-height: 30px;
+            text-align: left;
+            visibility: hidden;
+            border-radius: 6px;
+            -webkit-box-shadow: 0 20px 30px 0 rgba(50, 50, 50, 0.4);
+            -moz-box-shadow: 0 20px 30px 0 rgba(50, 50, 50, 0.4);
+            box-shadow: 0 20px 30px 0 rgba(50, 50, 50, 0.4);
+            padding: 0 20px;
+            white-space: nowrap;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 100%;
+                margin-top: -8px;
+                width: 0;
+                height: 0;
+                border-right: 8px solid #fff;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+            }
+
+        }
+        &:hover span {
+            visibility: visible;
+            opacity: 1;
+            left: 100%;
+            top: 50%;
+            margin-top: -15px;
+            margin-left: 15px;
+            z-index: 999;
+        }
+        img {
+            width: 35px;
+            transition: all .1s ease-in-out;
+        }
+        &:hover {
+            img {
+
+                transform: scale(1.2);
+            }
+        }
     }
 }
 
