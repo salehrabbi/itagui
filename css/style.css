@@ -1146,7 +1146,7 @@ ul.sider-bar-icon li:hover img {
 }
 
 @media (min-width: 992px) {
-  .main-header {
+  .scroll {
     position: fixed;
     width: 100%;
     background: #fff;
@@ -1154,10 +1154,6 @@ ul.sider-bar-icon li:hover img {
     top: 0;
     -webkit-transition: .3s;
     transition: .3s;
-  }
-
-  .slider {
-    margin-top: 8.3125rem;
   }
 
   .search-top,
