@@ -17,6 +17,16 @@ html {
         .social-top li {
             margin-right: rem(50px);
         }
+        .main-header.scroll .social-top.social-top-3 {
+            position: relative;
+            top: -15px;
+        }
+        .main-header.scroll .search-top-2.active {
+            top: 170%;
+        }
+        .main-header.scroll .yamm .menu-logo {
+            width: 130%;
+        }
     }
 
 
@@ -62,7 +72,7 @@ html {
             /* NEW */
             display: block!important;
         }
-        .yamm .navbar-header .date {
+        .main-header .date {
             display: none;
         }
         .search-top,
@@ -199,6 +209,12 @@ html {
                 width: rem(80px);
             }
         }
+        .yamm .navbar-collapse {
+            width: 100%;
+        }
+        .yamm .navbar-brand {
+            min-height: rem(80px);
+        }
     }
 
 
@@ -210,6 +226,9 @@ html {
         .subscribe h2 {
             text-align: center;
             margin-bottom: rem(15px);
+        }
+        ul.sider-bar-icon{
+            display: none;
         }
     }
 

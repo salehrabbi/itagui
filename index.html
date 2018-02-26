@@ -28,10 +28,11 @@
 <body>
     <header class="main-header">
         <div class="header-top">
-            <div class="container">
+            <div class="container" style="position: relative">
+                <div class="date">Última actualización 10/12/18</div>
                 <div class="row">
                     <div class="col-xs-9 col-md-offset-3">
-                        <div class="row">
+                        <div class="row flex-center-hor">
                             <div class="col-md-7">
                                 <ul class="social-top social-top-1">
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -43,14 +44,17 @@
                             </div>
                             <div class="col-md-5">
                                 <ul class="social-top social-top-2">
-                                    <li><a id="black-white" class="img" href="#"><img src="images/Group%2017.png" alt=""></a></li>
+                                    <li><a class="img black-white" href="javascript:void(0);"><img src="images/Group%2017.png" alt=""></a></li>
                                     <li style="position: relative;"><a id="font-resize-control" class="img" href="javascript:void(0);"><img src="images/Path%2039.png" alt=""></a>
-                                        <div class="font-resize">
+                                        <div class="font-resize font-resize-1">
                                             <i data-toggle="tooltip" data-placement="bottom" title="A+" class="fa fa-plus"></i>
                                             <i data-toggle="tooltip" data-placement="bottom" title="A-" class="fa fa-minus"></i>
                                         </div>
                                     </li>
-                                    <li><a class="img" href="#"><img src="images/Group%2020.png" alt=""></a></li>
+                                    <li style="position: relative;"><a id="translate" class="img" href="javascript:void(0);"><img src="images/Group%2020.png" alt=""></a>
+                                        <div id="google_translate_element" class="google_translate_element"></div>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -58,119 +62,146 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="navbar navbar-default yamm">
-                    <div class="navbar-header">
-                        <div class="date">Última actualización 10/12/18</div>
-                        <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="images/c5aa3-logotipo-itagui-fondo-transparente2.png" class="img-responsive" alt=""></a>
-                        <form action="#" class="search-top clearfix">
-                            <input type="text" placeholder="Buscar">
-                            <button type="submit"><img src="images/Path%2047.png" alt=""></button>
-                        </form>
-                    </div>
-                    <div id="navbar-collapse-grid" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <!-- Grid 12 Menu -->
-                            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/Group%20157.png" alt="" class="mobile-icon">La Alcaldía</a>
-                                <ul class="dropdown-menu">
-                                    <li class="grid-demo">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <ul class="mega-drop">
-                                                    <li><a href="#"><span>+</span> Contratación</a></li>
-                                                    <li><a href="#"><span>+</span> Escríbale al Alcalde</a></li>
-                                                    <li><a href="#"><span>+</span> Estatuto Tributario</a></li>
-                                                    <li><a href="#"><span>+</span> Gaceta Municipal</a></li>
-                                                    <li><a href="#"><span>+</span> Plan de Desarrollo</a></li>
-                                                    <li class="extra"><a href="#"><img src="images/Group%2049.png" alt=""> Item extra 1</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <ul class="mega-drop">
-                                                    <li><a href="#"><span>+</span> Contratación</a></li>
-                                                    <li><a href="#"><span>+</span> Escríbale al Alcalde</a></li>
-                                                    <li><a href="#"><span>+</span> Estatuto Tributario</a></li>
-                                                    <li><a href="#"><span>+</span> Gaceta Municipal</a></li>
-                                                    <li><a href="#"><span>+</span> Plan de Desarrollo</a></li>
-                                                    <li class="extra"><a href="#"><img src="images/Path%2073.png" alt=""> Item extra 1</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <ul class="mega-drop">
-                                                    <li><a href="#"><span>+</span> Contratación</a></li>
-                                                    <li><a href="#"><span>+</span> Escríbale al Alcalde</a></li>
-                                                    <li><a href="#"><span>+</span> Estatuto Tributario</a></li>
-                                                    <li><a href="#"><span>+</span> Gaceta Municipal</a></li>
-                                                    <li><a href="#"><span>+</span> Plan de Desarrollo</a></li>
-                                                    <li class="extra"><a href="#"><img src="images/Path%2074.png" alt=""> Item extra 1</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!--With Offsets 
-                          -->
-                            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/Group%20158.png" alt="" class="mobile-icon">Atención al Ciudadano</a>
-                                <ul class="dropdown-menu">
-                                    <li class="grid-demo">
-                                        <div class="row">
-                                            <div class="col-sm-4">4</div>
-                                            <div class="col-sm-4 col-sm-offset-4">4 offset 4</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-3 col-sm-offset-3">3 offset 3</div>
-                                            <div class="col-sm-3 col-sm-offset-3">3 offset 3</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-sm-offset-3">6 offset 6</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!--Aside Menu 
-                          -->
-                            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/Group%20159.png" alt="" class="mobile-icon">Trámites y Servicios</a>
-                                <ul class="dropdown-menu">
-                                    <li class="grid-demo">
-                                        <div class="row">
-                                            <div class="col-sm-3"><br>
-                                                <h3>3</h3><br>
-                                            </div>
-                                            <div class="col-sm-9"><br>
-                                                <h3>9</h3><br>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!--Nesting Menu 
-                          -->
-                            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/Group%20160.png" alt="" class="mobile-icon">Transparencia</a>
-                                <ul class="dropdown-menu">
-                                    <li class="grid-demo">
-                                        <div class="row">
-                                            <div class="col-sm-12">12</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">12
-                                                <div class="row">
-                                                    <div class="col-sm-4">4</div>
-                                                    <div class="col-sm-4">4</div>
-                                                    <div class="col-sm-4">4</div>
+        <div class="main-mega-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar navbar-default yamm">
+                        <div class="navbar-header">
+
+                            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="images/c5aa3-logotipo-itagui-fondo-transparente2.png" class="img-responsive" alt=""></a>
+                            <form action="#" class="search-top clearfix">
+                                <input type="text" placeholder="Buscar">
+                                <button type="submit"><img src="images/Path%2047.png" alt=""></button>
+                            </form>
+                        </div>
+                        <div id="navbar-collapse-grid" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <!-- Grid 12 Menu -->
+                                <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/Group%20157.png" alt="" class="mobile-icon">La Alcaldía</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="grid-demo">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <ul class="mega-drop">
+                                                        <li><a href="#"><span>+</span> Contratación</a></li>
+                                                        <li><a href="#"><span>+</span> Escríbale al Alcalde</a></li>
+                                                        <li><a href="#"><span>+</span> Estatuto Tributario</a></li>
+                                                        <li><a href="#"><span>+</span> Gaceta Municipal</a></li>
+                                                        <li><a href="#"><span>+</span> Plan de Desarrollo</a></li>
+                                                        <li class="extra"><a href="#"><img src="images/Group%2049.png" alt=""> Item extra 1</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <ul class="mega-drop">
+                                                        <li><a href="#"><span>+</span> Contratación</a></li>
+                                                        <li><a href="#"><span>+</span> Escríbale al Alcalde</a></li>
+                                                        <li><a href="#"><span>+</span> Estatuto Tributario</a></li>
+                                                        <li><a href="#"><span>+</span> Gaceta Municipal</a></li>
+                                                        <li><a href="#"><span>+</span> Plan de Desarrollo</a></li>
+                                                        <li class="extra"><a href="#"><img src="images/Path%2073.png" alt=""> Item extra 1</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <ul class="mega-drop">
+                                                        <li><a href="#"><span>+</span> Contratación</a></li>
+                                                        <li><a href="#"><span>+</span> Escríbale al Alcalde</a></li>
+                                                        <li><a href="#"><span>+</span> Estatuto Tributario</a></li>
+                                                        <li><a href="#"><span>+</span> Gaceta Municipal</a></li>
+                                                        <li><a href="#"><span>+</span> Plan de Desarrollo</a></li>
+                                                        <li class="extra"><a href="#"><img src="images/Path%2074.png" alt=""> Item extra 1</a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown yamm-fw menu-logo"><a href="#"><img src="images/Escudo-colombia.png" alt=""></a></li>
-                        </ul>
-                        <form action="#" class="search-top search-bottom clearfix">
-                            <input type="text" placeholder="Buscar">
-                            <button type="submit"><img src="images/Path%2047.png" alt=""></button>
-                        </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--With Offsets 
+                              -->
+                                <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/Group%20158.png" alt="" class="mobile-icon">Atención al Ciudadano</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="grid-demo">
+                                            <div class="row">
+                                                <div class="col-sm-4">4</div>
+                                                <div class="col-sm-4 col-sm-offset-4">4 offset 4</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3 col-sm-offset-3">3 offset 3</div>
+                                                <div class="col-sm-3 col-sm-offset-3">3 offset 3</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">6 offset 6</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--Aside Menu 
+                              -->
+                                <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/Group%20159.png" alt="" class="mobile-icon">Trámites y Servicios</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="grid-demo">
+                                            <div class="row">
+                                                <div class="col-sm-3"><br>
+                                                    <h3>3</h3><br>
+                                                </div>
+                                                <div class="col-sm-9"><br>
+                                                    <h3>9</h3><br>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--Nesting Menu 
+                              -->
+                                <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/Group%20160.png" alt="" class="mobile-icon">Transparencia</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="grid-demo">
+                                            <div class="row">
+                                                <div class="col-sm-12">12</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">12
+                                                    <div class="row">
+                                                        <div class="col-sm-4">4</div>
+                                                        <div class="col-sm-4">4</div>
+                                                        <div class="col-sm-4">4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown yamm-fw menu-logo">
+
+                                    <a href="#"><img src="images/Escudo-colombia.png" alt=""></a>
+
+                                    <ul class="social-top social-top-3">
+                                        <li><a class="img black-white" href="javascript:void(0);"><img src="images/Group%2017.png" alt=""></a></li>
+                                        <li style="position: relative;"><a id="font-resize-control" class="img" href="javascript:void(0);"><img src="images/Path%2039.png" alt=""></a>
+                                            <div class="font-resize font-resize-2">
+                                                <i data-toggle="tooltip" data-placement="bottom" title="A+" class="fa fa-plus"></i>
+                                                <i data-toggle="tooltip" data-placement="bottom" title="A-" class="fa fa-minus"></i>
+                                            </div>
+                                        </li>
+                                        <li style="position: relative;"><a id="translate" class="img" href="javascript:void(0);"><img src="images/Repeat%20Grid%204.png" alt=""></a>
+
+                                        </li>
+                                        <li style="position: relative;"><a id="search-control" class="img" href="javascript:void(0);"><img src="images/Path477.png" alt=""></a>
+                                            <form action="#" class="search-top search-top-2 clearfix">
+                                                <input type="text" placeholder="Buscar">
+                                                <button type="submit"><img src="images/Path%2047.png" alt=""></button>
+                                            </form>
+
+
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                            <form action="#" class="search-top search-bottom clearfix">
+                                <input type="text" placeholder="Buscar">
+                                <button type="submit"><img src="images/Path%2047.png" alt=""></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,6 +298,17 @@
     </div>
     <!--    /*============================= Notice =========================*/-->
     <section class="notice">
+        <ul class="sider-bar-icon">
+            <li><a href="#"><img src="images/side-1.png" alt="" class="img-responsive"></a></li>
+            <li><a href="#"><img src="images/side-2.png" alt="" class="img-responsive"></a></li>
+            <li><a href="#"><img src="images/side-3.png" alt="" class="img-responsive"></a></li>
+            <li><a href="#"><img src="images/side-4.png" alt="" class="img-responsive"></a></li>
+            <li><a href="#"><img src="images/side-5.png" alt="" class="img-responsive"></a></li>
+            <li><a href="#"><img src="images/side-6.png" alt="" class="img-responsive"></a></li>
+            <li><a href="#"><img src="images/side-7.png" alt="" class="img-responsive"></a></li>
+            <li><a href="#"><img src="images/side-8.png" alt="" class="img-responsive"></a></li>
+            <li><a href="#"><img src="images/side-9.png" alt="" class="img-responsive"></a></li>
+        </ul>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -989,6 +1031,7 @@
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js" type="text/javascript"></script>
 </body>
 
