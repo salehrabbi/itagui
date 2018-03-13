@@ -139,7 +139,7 @@ $(document).ready(function () {
         });
     });
     $(".black-white").click(function () {
-        $("section,div").toggleClass("gray");
+        $("section,footer,.navbar-collapse,.navbar-brand,.header-top").toggleClass("gray");
         $(".goog-te-banner-frame").toggleClass("translate-posotion");
     });
     
