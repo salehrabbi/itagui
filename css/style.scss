@@ -556,7 +556,7 @@ a.blog-button {
     padding-top: rem(50px);
     padding-bottom: rem(44px);
     .content {
-        box-shadow: 0 rem(3px) rem(6px) #000;
+        box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,.16);
         margin-bottom: rem(40px);
         .img {
             position: relative;
