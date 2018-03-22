@@ -40,6 +40,12 @@
 
 })(jQuery);
 
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').click(function () {
+        $('.tooltip').toggleClass('in');
+    });
+});
 
 $('.owl-carousel-1').owlCarousel({
     nav: true,
@@ -47,30 +53,30 @@ $('.owl-carousel-1').owlCarousel({
     autoplay: true,
     autoplayHoverPause: true,
     rewind: true,
-    navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    
-    responsive:{
-        0:{
-            items:2,
-            nav:false,
+    navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+
+    responsive: {
+        0: {
+            items: 2,
+            nav: false,
             loop: false
         },
-        480:{
-            items:3,
-            nav:false,
+        480: {
+            items: 3,
+            nav: false,
             loop: false
         },
-        576:{
-            items:3,
+        576: {
+            items: 3,
         },
-        768:{
-            items:4,
+        768: {
+            items: 4,
         },
-        992:{
-            items:5,
+        992: {
+            items: 5,
         }
     }
 })
@@ -83,30 +89,30 @@ $('.owl-carousel-2').owlCarousel({
     autoplay: true,
     autoplayHoverPause: true,
     rewind: true,
-    navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>'],
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    
-    responsive:{
-        0:{
-            items:2,
-            nav:false,
+    navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+
+    responsive: {
+        0: {
+            items: 2,
+            nav: false,
             loop: false
         },
-        480:{
-            items:3,
-            nav:false,
+        480: {
+            items: 3,
+            nav: false,
             loop: false
         },
-        576:{
-            items:3,
+        576: {
+            items: 3,
         },
-        768:{
-            items:4,
+        768: {
+            items: 4,
         },
-        992:{
-            items:6,
+        992: {
+            items: 6,
         }
     }
 })
@@ -142,8 +148,8 @@ $(document).ready(function () {
         $("section,footer,.navbar-collapse,.navbar-brand,.header-top").toggleClass("gray");
         $(".goog-te-banner-frame").toggleClass("translate-posotion");
     });
-    
-    
+
+
     $(".social-top-3 #search-control").click(function () {
         $(".social-top-3 .search-top-2").toggleClass("active");
         $(".social-top-3 .font-resize").removeClass("active");
@@ -159,16 +165,18 @@ $(document).ready(function () {
         $(".social-top-3 .search-top-2").removeClass("active");
         $(".social-top-3 .font-resize").removeClass("active");
     });
-    
-    
-    
-    
-    
+
+
+
+
+
 });
 
 
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+    new google.translate.TranslateElement({
+        pageLanguage: 'es'
+    }, 'google_translate_element');
 }
 
 
@@ -181,7 +189,7 @@ $(document).scroll(function (e) {
     } else {
         $('.main-header').removeClass('scroll');
         $(".social-top-3 .search-top-2").removeClass("active");
-       $(".social-top-3 .font-resize").removeClass("active");
+        $(".social-top-3 .font-resize").removeClass("active");
     }
 });
 
@@ -204,6 +212,3 @@ $(document).scroll(function (e) {
 //   }
 //   lastScrollTop = st;
 //});
-
-
-

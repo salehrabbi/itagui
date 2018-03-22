@@ -80,8 +80,10 @@ body {
             border-radius: 50%;
             text-align: center;
             line-height: rem(30px);
+            transition: .3s;
 
         }
+
         a.img {
             width: auto;
             height: auto;
@@ -89,6 +91,45 @@ body {
 
             img {
                 max-width: 100%;
+            }
+        }
+    }
+}
+
+.social-top-1,
+.footer-social {
+    li {
+        a {
+            transition: .3s;
+        }
+        &:nth-child(1) {
+            &:hover a {
+                background: #FECA00;
+                color: #fff;
+            }
+        }
+        &:nth-child(2) {
+            &:hover a {
+                background: #009EE2;
+                color: #fff;
+            }
+        }
+        &:nth-child(3) {
+            &:hover a {
+                background: #E53935;
+                color: #fff;
+            }
+        }
+        &:nth-child(4) {
+            &:hover a {
+                background: #27AE60;
+                color: #fff;
+            }
+        }
+        &:nth-child(5) {
+            &:hover a {
+                background: #FECA00;
+                color: #fff;
             }
         }
     }
@@ -371,6 +412,37 @@ body {
     }
 }
 
+
+@media (min-width:992px) {
+    .yamm .yamm-fw {
+        &:nth-child(1) {
+            a:hover {
+                color: #FECA00;
+            }
+        }
+        &:nth-child(2) {
+            a:hover {
+                color: #27AE60;
+            }
+        }
+        &:nth-child(3) {
+            a:hover {
+                color: #E53935;
+            }
+        }
+        &:nth-child(4) {
+            a:hover {
+                color: #009EE2;
+            }
+        }
+    }
+}
+
+
+
+
+
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
@@ -556,7 +628,7 @@ a.blog-button {
     padding-top: rem(50px);
     padding-bottom: rem(44px);
     .content {
-        box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,.16);
+        box-shadow: 0 rem(3px) rem(6px) rgba(0, 0, 0, .16);
         margin-bottom: rem(40px);
         .img {
             position: relative;
@@ -647,10 +719,30 @@ a.view-more {
         color: #fff;
         padding-bottom: rem(70px);
     }
-    .owl-carousel .owl-item img {
-        width: auto;
-        margin: 0 auto;
+    .owl-carousel .owl-item {
+        img {
+            width: auto;
+            margin: 0 auto;
+        }
     }
+    .item-top,
+    .item-bottom {
+        img + img {
+            display: none;
+        }
+        &:hover {
+            img {
+                display: none;
+            }
+            img + img {
+                display: block;
+            }
+            a {
+                color: #2a88d3;
+            }
+        }
+    }
+
     .nav {
         text-align: center;
         li {
@@ -663,13 +755,15 @@ a.view-more {
                 &:hover,
                 &:focus {
                     background: none;
-                    text-decoration: underline;
+                    text-decoration: none;
+                    border-bottom: 2px solid #2196F3;
                 }
             }
         }
         li.active {
             a {
-                text-decoration: underline;
+                text-decoration: none;
+                border-bottom: 2px solid #2196F3;
             }
         }
     }
@@ -679,7 +773,7 @@ a.view-more {
     .content {
         text-align: center;
         .item-top {
-            padding-bottom: rem(120px);
+            margin-bottom: rem(120px);
         }
         img {
             max-width: 100%;
@@ -725,14 +819,14 @@ a.view-more {
             margin: 0 rem(12px);
         }
         .owl-dot.active {
-            background: #fff;
+            background: #2196F3;
         }
     }
 }
 
 .video-gallery {
     //    margin-top: rem(310px);
-    background: #182A47;
+    background: #36638F;
     padding-bottom: rem(73px);
     iframe {
         width: 100%;
@@ -1078,7 +1172,6 @@ a.view-more {
             color: #000;
             font-size: rem(32px);
             line-height: rem(55px);
-            box-shadow: 0 rem(3px) rem(6px) rgba(0, 0, 0, .16);
             top: 50%;
             position: absolute;
             margin-top: rem(-30px);
@@ -1242,9 +1335,7 @@ ul.sider-bar-icon {
         z-index: 99999;
         top: 0;
         transition: .3s;
-    }
-
-    //    .slider {
+    } //    .slider {
     //        margin-top: rem(133px);
     //    }
     .search-top,
@@ -1328,6 +1419,74 @@ ul.sider-bar-icon {
         .yamm .dropdown-menu {
             width: calc(100% - 164px);
 
+        }
+    }
+}
+
+
+/*============================= provide =========================*/
+.provide{
+    background: #E1E7EB;
+    padding-top: 16px;
+    padding-bottom: 35px;
+    a.content{
+        display: block;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin: 7px 0;
+        .img{
+            height: rem(66px);
+            width: rem(66px);
+            border: rem(3px) solid #EAEDEF;
+            background: #FFFFFF;
+            border-radius: rem(10px);
+            box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,.16);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            position: relative;
+            z-index: 2;
+            transition: .5s;
+            img+img{
+                display: none;
+            }
+        }
+        
+        .text{
+            float: left;
+            background: #ECEFF1;
+            border: rem(2px) solid #FFFFFF;
+            box-shadow: 0 rem(3px) rem(6px) rgba(0,0,0,.16);
+            width: calc(100% - 4.125rem);
+            position: relative;
+            z-index: 1;
+            padding: rem(8px) rem(15px);
+            left: rem(-3px);
+            color: #000000;
+            font-weight: 500;
+            font-size: rem(17px);
+            border-radius: rem(5px);
+            overflow: hidden;
+            transition: .5s;
+        }
+        &:hover{
+            .img{
+                background: #2196F3;
+                box-shadow: 0 0 rem(7px) rgba(33,150,243,.50);
+                img{
+                    display: none;
+                }
+                img+img{
+                    display: block;
+                }
+            }
+            .text{
+                background: #fff;
+                border-color: #fff;
+                box-shadow: 0 0 rem(7px) rgba(33,150,243,.50);
+            }
         }
     }
 }
