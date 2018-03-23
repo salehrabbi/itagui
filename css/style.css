@@ -630,11 +630,14 @@ a.view-more span {
 /*============================= main-footer =========================*/
 /*============================= service =========================*/
 .service {
-  background: url(../images/fondo-servicios.jpg) no-repeat;
+  background: url(../images/fondo-servicios.jpg) no-repeat center;
   background-size: cover;
+}
+.service .overlay {
   min-height: 62.5rem;
   padding-top: 2.1875rem;
   padding-bottom: 9.375rem;
+  background: rgba(0, 0, 0, 0.5);
 }
 .service .section-head {
   color: #fff;
@@ -1368,6 +1371,15 @@ ul.sider-bar-icon li:hover img {
   background: #E1E7EB;
   padding-top: 16px;
   padding-bottom: 35px;
+}
+.provide .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .provide a.content {
   display: block;
