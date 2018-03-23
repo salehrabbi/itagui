@@ -137,6 +137,9 @@ body {
 
 .social-top-2 {
     text-align: right;
+    li{
+        margin-right: rem(19px);
+    }
 }
 
 .search-top {
@@ -727,6 +730,18 @@ a.view-more {
     }
     .item-top,
     .item-bottom {
+        display: block;
+        min-height: 197px;
+        .img{
+            background: url(../images/ser-bg.png) no-repeat;
+            background-size: 100% 100%;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
         img + img {
             display: none;
         }
@@ -737,8 +752,11 @@ a.view-more {
             img + img {
                 display: block;
             }
-            a {
+            h4 {
                 color: #2a88d3;
+            }
+            .img{
+                background-image: url(../images/ser-bg-b.png);
             }
         }
     }
@@ -779,11 +797,12 @@ a.view-more {
             max-width: 100%;
 
         }
-        a {
+        h4 {
             color: #fff;
             font: rem(21px) $r;
             display: inline-block;
             margin-top: rem(45px);
+            margin-bottom: 0;
         }
     }
     .owl-nav {
@@ -1113,7 +1132,7 @@ a.view-more {
         flex-flow: row wrap;
     }
     input[type="text"] {
-        font: italic rem(22px) $l;
+        font: rem(20px) $r;
         color: #fff;
         height: rem(48px);
         width: 100%;
@@ -1140,7 +1159,7 @@ a.view-more {
     input[type="submit"] {
         width: 100%;
         background: #F1F1F1;
-        font: 16px $l;
+        font: 500 18px $r;
         color: #2D81D4;
         border: none;
         height: rem(48px);
@@ -1178,12 +1197,12 @@ a.view-more {
         }
         .owl-prev {
             i {
-                left: rem(-24px);
+                left: rem(-40px);
             }
         }
         .owl-next {
             i {
-                right: rem(-24px);
+                right: rem(-40px);
             }
         }
     }
@@ -1249,7 +1268,7 @@ a.view-more {
 
 .copy {
     background: #000000;
-    padding: rem(10px) 0;
+    padding: rem(18px) 0;
     min-height: rem(74px);
     p {
         margin: 0;

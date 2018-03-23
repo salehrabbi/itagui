@@ -93,6 +93,9 @@ body {
 .social-top-2 {
   text-align: right;
 }
+.social-top-2 li {
+  margin-right: 1.1875rem;
+}
 
 .search-top {
   background: rgba(0, 0, 0, 0.5);
@@ -641,6 +644,28 @@ a.view-more span {
   width: auto;
   margin: 0 auto;
 }
+.service .item-top,
+.service .item-bottom {
+  display: block;
+  min-height: 197px;
+}
+.service .item-top .img,
+.service .item-bottom .img {
+  background: url(../images/ser-bg.png) no-repeat;
+  background-size: 100% 100%;
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
 .service .item-top img + img,
 .service .item-bottom img + img {
   display: none;
@@ -653,9 +678,13 @@ a.view-more span {
 .service .item-bottom:hover img + img {
   display: block;
 }
-.service .item-top:hover a,
-.service .item-bottom:hover a {
+.service .item-top:hover h4,
+.service .item-bottom:hover h4 {
   color: #2a88d3;
+}
+.service .item-top:hover .img,
+.service .item-bottom:hover .img {
+  background-image: url(../images/ser-bg-b.png);
 }
 .service .nav {
   text-align: center;
@@ -690,11 +719,12 @@ a.view-more span {
 .service .content img {
   max-width: 100%;
 }
-.service .content a {
+.service .content h4 {
   color: #fff;
   font: 1.3125rem "Roboto", sans-serif;
   display: inline-block;
   margin-top: 2.8125rem;
+  margin-bottom: 0;
 }
 .service .owl-nav i {
   font-size: 2.5rem;
@@ -1016,7 +1046,7 @@ a.view-more span {
           flex-flow: row wrap;
 }
 .subscribe input[type="text"] {
-  font: italic 1.375rem "Lato", sans-serif;
+  font: 1.25rem "Roboto", sans-serif;
   color: #fff;
   height: 3rem;
   width: 100%;
@@ -1059,7 +1089,7 @@ a.view-more span {
 .subscribe input[type="submit"] {
   width: 100%;
   background: #F1F1F1;
-  font: 16px "Lato", sans-serif;
+  font: 500 18px "Roboto", sans-serif;
   color: #2D81D4;
   border: none;
   height: 3rem;
@@ -1095,10 +1125,10 @@ a.view-more span {
   margin-top: -1.875rem;
 }
 .patner .owl-nav .owl-prev i {
-  left: -1.5rem;
+  left: -2.5rem;
 }
 .patner .owl-nav .owl-next i {
-  right: -1.5rem;
+  right: -2.5rem;
 }
 
 /*============================= main-footer =========================*/
@@ -1164,7 +1194,7 @@ a.view-more span {
 
 .copy {
   background: #000000;
-  padding: 0.625rem 0;
+  padding: 1.125rem 0;
   min-height: 4.625rem;
 }
 .copy p {

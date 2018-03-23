@@ -24,8 +24,14 @@ html {
   html .main-header.scroll .yamm .menu-logo {
     width: 130%;
   }
+  html .patner .carousel-wraper {
+    max-width: 913px;
+  }
 }
 @media (max-width: 991px) {
+  html .patner .carousel-wraper {
+    max-width: 688px;
+  }
   html .banner-alart {
     font-size: 1.1875rem;
   }
@@ -208,6 +214,9 @@ html {
 @media (max-width: 767px) {
   html {
     font-size: 90%;
+  }
+  html .patner .carousel-wraper {
+    max-width: 504px;
   }
   html .video-gallery iframe.small {
     min-height: 18.625rem;
